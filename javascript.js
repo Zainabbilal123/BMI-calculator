@@ -1,32 +1,35 @@
-var weight = document.getElementById('weight');
-var height =document.getElementById('height');
-var buttonresult = document.getElementById('buttonresult');
-var results = document.getElementById('results');
-var category = document.getElementById('category');
+const weight = document.getElementById('weight')
+const height =document.getElementById('height');
+const resultValue = document.getElementById('buttonresult');
+const bmiResult = document.getElementById('results');
+const categoryList = document.getElementById('category');
 
 
-buttonresult.addEventListener('click' , buttonresult);
+resultValue.addEventListener('click', calculatedBMI);
   
-function buttonresult {
-    weight.parsefloat('weight');
-    height.parsefloat('height');
+function calculatedBMI() {
+   const weightValue = parseFloat(weight.value);
+    const heightValue = parseFloat(height.value);
 
+   
 
-var formula = height*2/weight;
-var calculated = formula.tofixed[2]
+const formula = weightValue / ( heightValue ** 2);
+const solvedNumber = formula.toFixed(2);
 
-results.textContent= 'result: ${result}';
+     bmiResult.textContent= `BMI: ${solvedNumber};`
 
-var category
-if (calculated < 18.5) {
-     category = 'underwight'
-} else if (calculated < 24.9) {
-    category =" Normal weight"
-} else if(calculated < 29.9) {
-    category = "overweight"
-} else (calculated > 30) {
-    category = "obesity"
+let categoryMsg;
+if (formula < 18.5) {
+     categoryMsg = 'underweight';
+} else if (formula < 24.9) {
+    categoryMsg =" Normal weight";
+} else if(formula < 29.9) {
+    categoryMsg = "overweight";
+} else  {
+    categoryMsg = "obesity";
 }
 
-category.textContent = 'category: ${category}';
+  categoryList.textContent = categoryMsg;
 }
+
+
