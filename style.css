@@ -1,0 +1,31 @@
+#container{
+   text-align: center;
+    color: black;
+    margin-top: 4%;
+    border: purple solid 5px;
+    border-radius: 50px;
+    margin-left: 35%;
+    margin-right: 35%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  background-color: rgb(212, 104, 212);
+
+}
+#height{
+     margin-top: 10px;
+}
+input{
+    padding: 10px;
+}
+#buttonresult{
+    margin-top: 25px;
+    padding: 10px 10px 10px 10px;
+    background-color: palevioletred;
+    border: purple 2px solid;
+}
+body{
+    background-image: url(./images\ \(2\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
