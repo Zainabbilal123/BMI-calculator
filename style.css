@@ -2,13 +2,13 @@
    text-align: center;
     color: black;
     margin-top: 4%;
-    border: purple solid 5px;
+    border: rgb(230, 10, 230) solid 5px;
     border-radius: 50px;
     margin-left: 35%;
     margin-right: 35%;
   padding-top: 9%;
   padding-bottom: 9%;
-  background-color: rgb(212, 104, 212);
+  background-color:plum;
 
 }
 #height{
